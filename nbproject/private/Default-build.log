@@ -1,0 +1,22 @@
+/usr/lib/x86_64-linux-gnu/qt5/bin/uic mainwindow.ui -o ui_mainwindow.h
+/usr/bin/g++ -c -g3 -gdwarf-2 -O2 -Wall -W -D_REENTRANT -fPIE -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I. -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtCore -I. -I. -o main.o main.cpp
+In file included from main.cpp:1:0:
+mainwindow.h:16:11: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+     int n=0;
+           ^
+/usr/bin/g++ -c -g3 -gdwarf-2 -O2 -Wall -W -D_REENTRANT -fPIE -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I. -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtCore -I. -I. -o mainwindow.o mainwindow.cpp
+In file included from mainwindow.cpp:4:0:
+mainwindow.h:16:11: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+     int n=0;
+           ^
+mainwindow.cpp: In member function ‘int srtn::siguienteProceso(int)’:
+mainwindow.cpp:84:71: warning: ‘low’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+             if (respaldo_tiempo_rafaga[i] < respaldo_tiempo_rafaga[low] && tiempo_llegada[i] <= time)
+                                                                       ^
+/usr/lib/x86_64-linux-gnu/qt5/bin/moc -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I. -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtCore -I. -I. -I/usr/include/c++/4.8 -I/usr/include/x86_64-linux-gnu/c++/4.8 -I/usr/include/c++/4.8/backward -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include mainwindow.h -o moc_mainwindow.cpp
+/usr/bin/g++ -c -g3 -gdwarf-2 -O2 -Wall -W -D_REENTRANT -fPIE -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I. -I/usr/include/qt5 -I/usr/include/qt5/QtWidgets -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtCore -I. -I. -o moc_mainwindow.o moc_mainwindow.cpp
+In file included from moc_mainwindow.cpp:9:0:
+mainwindow.h:16:11: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+     int n=0;
+           ^
+g++ -m64 -Wl,-O1 -o algoritmo_srtn main.o mainwindow.o moc_mainwindow.o   -L/usr/X11R6/lib64 -lQt5Widgets -L/usr/lib/x86_64-linux-gnu -lQt5Gui -lQt5Core -lGL -lpthread 

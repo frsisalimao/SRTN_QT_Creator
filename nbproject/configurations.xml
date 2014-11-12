@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <in>main.cpp</in>
+      <in>mainwindow.cpp</in>
+      <in>moc_mainwindow.cpp</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+      <itemPath>algoritmo_srtn.pro</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-O2 -fPIE"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>algoritmo_srtn</executablePath>
+          <ccTool>
+            <incDir>
+              <pElem>/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64</pElem>
+              <pElem>.</pElem>
+              <pElem>/usr/include/qt5</pElem>
+              <pElem>/usr/include/qt5/QtWidgets</pElem>
+              <pElem>/usr/include/qt5/QtGui</pElem>
+              <pElem>/usr/include/qt5/QtCore</pElem>
+            </incDir>
+            <preprocessorList>
+              <Elem>QT_CORE_LIB</Elem>
+              <Elem>QT_GUI_LIB</Elem>
+              <Elem>QT_NO_DEBUG</Elem>
+              <Elem>QT_WIDGETS_LIB</Elem>
+              <Elem>_REENTRANT</Elem>
+            </preprocessorList>
+          </ccTool>
+        </makeTool>
+      </makefileType>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mainwindow.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="moc_mainwindow.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
